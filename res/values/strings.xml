@@ -33,12 +33,12 @@
     <string name="activity_about_label">About</string>
     <string name="app_logo_content_description">App logo</string>
     <string name="by">By kaolick</string>
-    <string name="libraries_intro">IOIO_Droid is using the following libraries:</string>
-    <string name="libraries">- IOIOLibAccessory v3.30\n- IOIOLibAndroid v3.30\n- IOIOLibBT v3.30\n- OpenCSV v.2.3</string>
+    <string name="libraries_intro">IOIO-Droid is using the following libraries:</string>
+    <string name="libraries">- Google Play Services Library\n- Google Support Library v4\n- IOIOLibAccessory v3.30\n- IOIOLibAndroid v3.30\n- IOIOLibBT v3.30\n- OpenCSV v.2.3</string>
     <string name="license">The Android Robot logo is licensed under the terms of the Creative Commons Attribution license.</string>
     <string name="logo">App logo by Lukas Ruch</string>
-    <string name="more_information">More information about the IOIO open-source project:\n\nhttps://github.com/ytai/ioio/wiki\n\nDiscuss with other users:\n\nhttps://groups.google.com/forum/#!forum/ioio_users\n\nMore information about Xively:\n\nhttps://xively.com\n\n</string>
-    <string name="version">v1.0.2 (beta)</string>
+    <string name="more_information">More information about the IOIO open-source project:\n\nhttps://github.com/ytai/ioio/wiki\n\nDiscuss with other users:\n\nhttps://groups.google.com/forum/#!forum/ioio_users\n\nMore information about Xively:\n\nhttps://xively.com\n\nGet the IOIO-Droid source code on GitHub:\n\nhttps://github.com/kaolick/IOIO-Droid\n\n</string>
+    <string name="version">v1.0.3</string>
 
     <!-- IOIOSensorConfigActivity -->
     <string name="activity_edit_ioio_sensor_label">Config Sensor</string>
@@ -85,7 +85,7 @@
     <string name="pref_database_export_summ">Export all database tables to the external storage.</string>
     <string name="pref_database_export_title">Export Database</string>
     <string name="pref_general_about_key">pref_general_about_key</string>
-    <string name="pref_general_about_summ">Here you find more information about IOIO-Droid.</string>
+    <string name="pref_general_about_summ">Get more information about IOIO-Droid.</string>
     <string name="pref_general_about_title">About</string>
     <string name="pref_general_decimals_key">pref_decimals</string>
     <string name="pref_general_decimals_summ">Set the number of decimals for measured values.</string>
@@ -95,7 +95,7 @@
     <string name="pref_general_ioio_version_title">IOIO Board Version</string>
     <string name="pref_general_simulation_mode_key">pref_general_simulation_mode</string>
     <string name="pref_general_simulation_mode_summ_off">Turn ON to simulate the connection with a IOIO board.</string>
-    <string name="pref_general_simulation_mode_summ_on">Turn OFF to use a real the connection with a IOIO board.</string>
+    <string name="pref_general_simulation_mode_summ_on">Turn OFF to use a real connection with a IOIO board.</string>
     <string name="pref_general_simulation_mode_title">Simulation Mode</string>
     <string name="pref_general_wakelock_key">pref_wakelock</string>
     <string name="pref_general_wakelock_summ_off">Turn ON to keep the CPU awake during measuring processes. CAUTION: Can drain the battery!!!</string>

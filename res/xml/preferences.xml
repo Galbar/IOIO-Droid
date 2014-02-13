@@ -3,6 +3,11 @@
 
     <!-- General -->
     <PreferenceCategory android:title="@string/pref_cat_general_title" >
+        <Preference
+            android:key="@string/pref_general_about_key"
+            android:summary="@string/pref_general_about_summ"
+            android:title="@string/pref_general_about_title" />
+
         <ListPreference
             android:defaultValue="4"
             android:entries="@array/decimals"
@@ -34,11 +39,6 @@
             android:summaryOff="@string/pref_general_wakelock_summ_off"
             android:summaryOn="@string/pref_general_wakelock_summ_on"
             android:title="@string/pref_general_wakelock_title" />
-
-        <Preference
-            android:key="@string/pref_general_about_key"
-            android:summary="@string/pref_general_about_summ"
-            android:title="@string/pref_general_about_title" />
     </PreferenceCategory>
     <!-- Database -->
     <PreferenceCategory android:title="@string/pref_cat_database_title" >
