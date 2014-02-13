@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/helpHeaderTextView"
+            android:text="@string/help_delete_measurements_title" />
+
+        <TextView
+            style="@style/helpContentTextView"
+            android:text="@string/help_delete_measurements_content" />
+
+        <TextView
+            style="@style/helpHeaderTextView"
+            android:text="@string/help_export_measurements_title" />
+
+        <TextView
+            style="@style/helpContentTextView"
+            android:text="@string/help_export_measurements_content" />
+
+        <TextView
+            style="@style/helpHeaderTextView"
+            android:text="@string/help_upload_measurements_title" />
+
+        <TextView
+            style="@style/helpContentTextView"
+            android:text="@string/help_upload_measurements_content" />
+
+        <TextView
+            style="@style/helpHeaderTextView"
+            android:text="@string/help_refresh_measurements_title" />
+
+        <TextView
+            style="@style/helpContentTextView"
+            android:text="@string/help_refresh_measurements_content" />
+    </LinearLayout>
+
+</ScrollView>

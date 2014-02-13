@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="hint_lighter_gray">#bbb</color>
+    <color name="hint_darker_gray">#808080</color>
+    <color name="darker_red">#aa0000</color>
+    <color name="holo_green_mat">#96aa39</color>
+</resources>

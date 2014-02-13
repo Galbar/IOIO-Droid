@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Global -->
+    <string name="app_name">IOIO-Droid</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">I already filled out the questionnaire.</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="save">Save</string>
+    <string name="yes">Yes</string>
+
+    <!-- Array strings -->
+    <string name="seconds">Seconds</string>
+    <string name="minutes">Minutes</string>
+    <string name="hours">Hours</string>
+    <string name="analog">Analog</string>
+    <string name="digital">Digital</string>
+    <string name="none">0 or 1 (default)</string>
+    <string name="absolute">0 &#8211; 3.3V (absolute)</string>
+    <string name="relative">0 &#8211; 1 (scaled)</string>
+    <string name="floating">Floating (default)</string>
+    <string name="pull_down">Pull-down</string>
+    <string name="pull_up">Pull-up</string>
+    <string name="lower">Lower</string>
+    <string name="upper">Upper</string>
+    <string name="ioio_v1_entry">V1</string>
+    <string name="ioio_v1_entry_value">v1</string>
+    <string name="ioio_otg_entry">OTG</string>
+    <string name="ioio_otg_entry_value">otg</string>
+
+    <!-- AboutActivity -->
+    <string name="activity_about_label">About</string>
+    <string name="app_logo_content_description">App logo</string>
+    <string name="by">By kaolick</string>
+    <string name="libraries_intro">IOIO_Droid is using the following libraries:</string>
+    <string name="libraries">- IOIOLibAccessory v3.30\n- IOIOLibAndroid v3.30\n- IOIOLibBT v3.30\n- OpenCSV v.2.3</string>
+    <string name="license">The Android Robot logo is licensed under the terms of the Creative Commons Attribution license.</string>
+    <string name="logo">App logo by Lukas Ruch</string>
+    <string name="more_information">More information about the IOIO open-source project:\n\nhttps://github.com/ytai/ioio/wiki\n\nDiscuss with other users:\n\nhttps://groups.google.com/forum/#!forum/ioio_users\n\nMore information about Xively:\n\nhttps://xively.com\n\n</string>
+    <string name="version">v1.0.2 (beta)</string>
+
+    <!-- IOIOSensorConfigActivity -->
+    <string name="activity_edit_ioio_sensor_label">Config Sensor</string>
+    <string name="section_name">Sensor name &amp; pin number</string>
+    <string name="sensor_name">Sensor name</string>
+    <string name="sensor_pin">Pin number</string>
+    <string name="section_freq">Measurement frequency</string>
+    <string name="sensor_freq">Frequency</string>
+    <string name="section_input">Input type &amp; measurement type</string>
+    <string name="section_threshold">Threshold value &amp; type</string>
+    <string name="sensor_threshold">Threshold</string>
+    <string name="section_xively">Use Xively &amp; Datastream</string>
+    <string name="sensor_xively">Xively</string>
+    <string name="sensor_datastream">Datastream</string>
+
+    <!-- IOIOSensorMeasurementsActivity -->
+    <string name="activity_measurements_label">Measurements</string>
+    <string name="share_file">Share file</string>
+    <string name="textview_measurement_id">#:</string>
+    <string name="textview_timestamp">Timestamp:</string>
+    <string name="textview_uploaded">Uploaded:</string>
+
+    <!-- MainActivity -->
+    <string name="button_start">Start</string>
+    <string name="button_stop">Stop</string>
+    <string name="textview_pin_number">Pin #:</string>
+    <string name="textview_sensor_id">Sensor ID:</string>
+    <string name="textview_frequency">Frequency:</string>
+    <string name="imageview_state_content_description">State button</string>
+    <string name="imageview_measurements_content_description">Measurements button</string>
+    <string name="imageview_remove_measurement_content_description">Remove measurement button</string>
+    <string name="imageview_remove_sensor_content_description">Remove sensor button</string>
+
+    <!-- SettingsActivity -->
+    <string name="activity_settings_label">Settings</string>
+    <string name="pref_cat_database_title">Database</string>
+    <string name="pref_cat_general_title">General</string>
+    <string name="pref_cat_location_title">Location</string>
+    <string name="pref_cat_xively_title">Xively</string>
+    <string name="pref_database_delete_key">pref_db_delete</string>
+    <string name="pref_database_delete_summ">Delete all database tables including added sensors.</string>
+    <string name="pref_database_delete_title">Delete Database</string>
+    <string name="pref_database_export_key">pref_db_export</string>
+    <string name="pref_database_export_summ">Export all database tables to the external storage.</string>
+    <string name="pref_database_export_title">Export Database</string>
+    <string name="pref_general_about_key">pref_general_about_key</string>
+    <string name="pref_general_about_summ">Here you find more information about IOIO-Droid.</string>
+    <string name="pref_general_about_title">About</string>
+    <string name="pref_general_decimals_key">pref_decimals</string>
+    <string name="pref_general_decimals_summ">Set the number of decimals for measured values.</string>
+    <string name="pref_general_decimals_title">Decimals</string>
+    <string name="pref_general_ioio_version_key">pref_ioio_version</string>
+    <string name="pref_general_ioio_version_summ">Select the IOIO board version (V1 or OTG) connected to the device.</string>
+    <string name="pref_general_ioio_version_title">IOIO Board Version</string>
+    <string name="pref_general_simulation_mode_key">pref_general_simulation_mode</string>
+    <string name="pref_general_simulation_mode_summ_off">Turn ON to simulate the connection with a IOIO board.</string>
+    <string name="pref_general_simulation_mode_summ_on">Turn OFF to use a real the connection with a IOIO board.</string>
+    <string name="pref_general_simulation_mode_title">Simulation Mode</string>
+    <string name="pref_general_wakelock_key">pref_wakelock</string>
+    <string name="pref_general_wakelock_summ_off">Turn ON to keep the CPU awake during measuring processes. CAUTION: Can drain the battery!!!</string>
+    <string name="pref_general_wakelock_summ_on">Turn OFF to let the CPU go to sleep during measuring processes.</string>
+    <string name="pref_general_wakelock_title">Keep CPU Awake</string>
+    <string name="pref_location_delete_key">pref_location_delete</string>
+    <string name="pref_location_delete_summ">Delete all collected location data from the database.</string>
+    <string name="pref_location_delete_title">Delete Location Data</string>
+    <string name="pref_location_export_key">pref_location_export</string>
+    <string name="pref_location_export_summ">Export all collected location data to the external storage.</string>
+    <string name="pref_location_export_title">Export Location Data</string>
+    <string name="pref_location_location_service_key">pref_location_location_service</string>
+    <string name="pref_location_location_service_summ_off">Turn ON to enable automatic location updates during the measuring process.</string>
+    <string name="pref_location_location_service_summ_on">Turn OFF to disable automatic location updates during the measuring process.</string>
+    <string name="pref_location_location_service_title">Location Service</string>
+    <string name="pref_location_show_last_location_key">pref_location_show_last_location</string>
+    <string name="pref_location_show_last_location_summ">Show the device\'s last known location (f.e. in Google Maps).</string>
+    <string name="pref_location_show_last_location_title">Show Last Known Location</string>
+    <string name="pref_location_updates_frequency_dialog_message">Please enter a frequency for location updates:</string>
+    <string name="pref_location_updates_frequency_key">pref_location_frequency</string>
+    <string name="pref_location_updates_frequency_summ">Enter a frequency for location updates.</string>
+    <string name="pref_location_updates_frequency_title">Location Updates Frequency</string>
+    <string name="pref_location_updates_period_key">pref_location_period</string>
+    <string name="pref_location_updates_period_summ">Set the period for automatic location updates (default 1h).</string>
+    <string name="pref_location_updates_period_title">Location Updates Period</string>
+    <string name="pref_location_updates_time_unit_key">pref_location_time_unit</string>
+    <string name="pref_location_updates_time_unit_summ">Select a time unit for location updates.</string>
+    <string name="pref_location_updates_time_unit_title">Location Updates Time Unit</string>
+    <string name="pref_xively_api_key_dialog_message">Please enter your Xively API key:</string>
+    <string name="pref_xively_api_key_key">pref_xively_api_key</string>
+    <string name="pref_xively_api_key_summ">Enter your Xively API key.</string>
+    <string name="pref_xively_api_key_title">API key</string>
+    <string name="pref_xively_feed_id_dialog_message">Please enter your Feed ID:</string>
+    <string name="pref_xively_feed_id_key">pref_xively_feed_id</string>
+    <string name="pref_xively_feed_id_summ">Enter your Feed ID.</string>
+    <string name="pref_xively_feed_id_title">Feed ID</string>
+    <string name="pref_xively_upload_automatic_key">pref_upload_automatic</string>
+    <string name="pref_xively_upload_automatic_summ_off">Turn ON to enable automatic uploads for measurements and location data.</string>
+    <string name="pref_xively_upload_automatic_summ_on">Turn OFF to disable automatic uploads for measurements and location data.</string>
+    <string name="pref_xively_upload_automatic_title">Automatic Uploads</string>
+    <string name="pref_xively_upload_frequency_dialog_message">Please enter a frequency for automatic uploads:</string>
+    <string name="pref_xively_upload_frequency_key">pref_xively_upload_frequency</string>
+    <string name="pref_xively_upload_frequency_summ">Enter a frequency for automatic uploads.</string>
+    <string name="pref_xively_upload_frequency_title">Automatic Upload Frequency</string>
+    <string name="pref_xively_upload_period_key">pref_xively_upload_period</string>
+    <string name="pref_xively_upload_period_summ">Set the period for automatic uploads (default 1h).</string>
+    <string name="pref_xively_upload_period_title">Automatic Upload Period</string>
+    <string name="pref_xively_upload_location_key">pref_xively_upload_location</string>
+    <string name="pref_xively_upload_location_summ">Upload last known location.</string>
+    <string name="pref_xively_upload_location_title">Upload Location Data</string>
+    <string name="pref_xively_upload_measurements_key">pref_xively_upload_measurements</string>
+    <string name="pref_xively_upload_measurements_summ">Upload all measurements of all sensors that use Xively.</string>
+    <string name="pref_xively_upload_measurements_title">Upload Measurements</string>
+    <string name="pref_xively_upload_time_unit_key">pref_xively_upload_time_unit</string>
+    <string name="pref_xively_upload_time_unit_summ">Select a time unit for automatic uploads.</string>
+    <string name="pref_xively_upload_time_unit_title">Automatic Uploads Time Unit</string>
+
+    <!-- Dialog -->
+    <string name="dialog_delete_all_measurements_message">This will delete all measurements of this sensor from the database!</string>
+    <string name="dialog_delete_all_measurements_title">Delete all measurements?</string>
+    <string name="dialog_delete_all_sensors_message">This will delete all sensors from the database!</string>
+    <string name="dialog_delete_all_sensors_title">Delete all sensors?</string>
+    <string name="dialog_delete_database_message">This will delete all database tables.</string>
+    <string name="dialog_delete_database_title">Delete database?</string>
+    <string name="dialog_delete_location_data_message">This will delete all location data.</string>
+    <string name="dialog_delete_location_data_title">Delete location data?</string>
+
+    <!-- Help -->
+    <string name="help_add_sensor_content">Press ADD to open the sensor configuration screen. To save the sensor\'s configuration, press SAVE.</string>
+    <string name="help_add_sensor_title">Add Sensor</string>
+    <string name="help_analog_input_content">Use ANALOG INPUT to measure the voltage levels from 0V to 3.3V (default) or scaled to a range from 0 to 1. Get detailed information under\nhttp://github.com/ytai/ioio/wiki/Analog-Input</string>
+    <string name="help_analog_input_title">Analog Input</string>
+    <string name="help_delete_measurements_content">Press EDIT to activate ActionMode. To delete a specific value, click on the value\'s REMOVE-icon. To delete all values, press DELETE ALL.</string>
+    <string name="help_delete_measurements_title">Delete Measured Values</string>
+    <string name="help_delete_sensor_content">Press EDIT to activate ActionMode. To delete a specific sensor, click on the sensor\'s REMOVE-icon. To delete all sensors, press DELETE ALL.</string>
+    <string name="help_delete_sensor_title">Delete Sensor</string>
+    <string name="help_digital_input_content">Use DIGITAL INPUT to measure LOW (0 = false) or HIGH (1 = true). Get detailed information under\nhttp://github.com/ytai/ioio/wiki/Digital-IO</string>
+    <string name="help_digital_input_title">Digital Input</string>
+    <string name="help_edit_sensor_content">Do a long-click on the sensor to edit or see a its configuration. To save changes press SAVE.</string>
+    <string name="help_edit_sensor_title">Edit Sensor</string>
+    <string name="help_pause_sensor_content">Click on the sensor\'s PAUSE/PLAY-icon to pause or unpause the sensor. Only unpaused sensors are used during measurement processes.</string>
+    <string name="help_pause_sensor_title">Pause Sensor</string>
+    <string name="help_export_measurements_content">Press EXPORT to export the measured values table as a .csv-file to the external storage.</string>
+    <string name="help_export_measurements_title">Export Measured Values</string>
+    <string name="help_export_sensors_content">Press EXPORT to export the sensor configuration table as a .csv-file to the external storage.</string>
+    <string name="help_export_sensors_title">Export Sensor Configuration</string>
+    <string name="help_refresh_measurements_content">Press REFRESH to refresh the measured values list. Can be used during measurement processes.</string>
+    <string name="help_refresh_measurements_title">Refresh List</string>
+    <string name="help_show_measurements_content">Click on a sensor to open the measurements screen.</string>
+    <string name="help_show_measurements_title">Show Measured Values</string>
+    <string name="help_threshold_content">You can enter a threshold value. If the threshold type is set to LOWER, only measured values >= the threshold value will be saved in the database (&lt;= for threshold type UPPER). </string>
+    <string name="help_threshold_title">Threshold</string>
+    <string name="help_upload_measurements_content">Press UPLOAD to upload measured values to Xively. To use this feature you must enter your API-key and Feed ID in the settings, enable the sensor to use Xively and enter the according datastream.</string>
+    <string name="help_upload_measurements_title">Upload Measured Values</string>
+    <string name="help_xively_content">If activated you can upload measured values to your feed on Xively. For that enter the datastream from Xively that represents the sensor.</string>
+    <string name="help_xively_title">Xively</string>
+
+    <!-- Menu -->
+    <string name="menu_add_sensor">Add Sensor</string>
+    <string name="menu_delete_all">Delete all</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_export">Export</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_reset_ui">Reset UI</string>
+    <string name="menu_save_sensor">Save</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_upload">Upload</string>
+
+    <!-- Notification -->
+    <string name="notification_text">Click here to start/stop the process</string>
+    <string name="notification_title">IOIO Measuring Process</string>
+
+    <!-- Toasts -->
+    <string name="toast_database_deleted">Deleted all database tables!</string>
+    <string name="toast_datastream_in_use">Please enter a different datastream! This datastream is already used by the sensor with the ID</string>
+    <string name="toast_export_failed">File export failed!</string>
+    <string name="toast_export_success">File(s) exported to ~/IOIO-Droid/ !</string>
+    <string name="toast_ioio_disconnected">IOIO disconnected!</string>
+    <string name="toast_ioio_incompatible">IOIO incompatible! Application uses version 3.30! </string>
+    <string name="toast_is_measuring">Not available during measurement process!</string>
+    <string name="toast_location_already_uploaded">Last known location has already been uploaded!</string>
+    <string name="toast_location_client_connected">Location client connected!</string>
+    <string name="toast_location_client_connection_failed">Location client connection failed! Trying again to connect!</string>
+    <string name="toast_location_client_disconnected">Location client disconnected! Trying to re-connect!</string>
+    <string name="toast_location_data_deleted">All location data deleted!</string>
+    <string name="toast_measurement_deleted">Measurement deleted!</string>
+    <string name="toast_measuring_started">Measuring process started!</string>
+    <string name="toast_no_active_sensors">No active sensors!</string>
+    <string name="toast_no_api_key">No API key! Please enter your API key in the application settings!</string>
+    <string name="toast_no_feed_id">No Feed ID! Please enter your Feed ID in the application settings!</string>
+    <string name="toast_no_internet_connection">No internet connection!</string>
+    <string name="toast_no_last_location">No last location!</string>
+    <string name="toast_not_implemented">Not implemented yet!</string>
+    <string name="toast_pin_number_in_use">Please enter a different pin number! This pin number is already used by the sensor with the ID</string>
+    <string name="toast_refreshed_measurements">Refreshed list of measurements!</string>
+    <string name="toast_sensor_deleted">Sensor deleted!</string>
+    <string name="toast_sensor_invalid_datastream">Please enter a non-empty datastream!</string>
+    <string name="toast_sensor_invalid_feed_id">Please enter a valid feed ID!</string>
+    <string name="toast_sensor_invalid_freq">Please enter a non-empty measurement frequency > 1!</string>
+    <string name="toast_sensor_invalid_name">Please enter a non-empty sensor name!</string>
+    <string name="toast_sensor_invalid_pin_number_for_analog_input">Please enter a pin number between 31 and 46 for input type analog!</string>
+    <string name="toast_sensor_invalid_pin_number_otg">Please enter a pin number between 1 and 46!</string>
+    <string name="toast_sensor_invalid_pin_number_v1">Please enter a pin number between 1 and 48!</string>
+    <string name="toast_sensor_not_using_xively">The sensor is not configured to use Xively! Please change the sensor\'s configuration!</string>
+    <string name="toast_sensor_saved">Sensor configuration saved!</string>
+    <string name="toast_sensor_threshold_absolute">Please enter a threshold between below 3.3!</string>
+    <string name="toast_sensor_threshold_relative">Please enter a threshold between below 1!</string>
+    <string name="toast_sensor_updated">Sensor configuration updated!</string>
+    <string name="toast_storage_not_available">External storage is not available!</string>
+    <string name="toast_upload_coordinates_started">Trying to upload coordinates&#8230;</string>
+    <string name="toast_upload_failed">Upload failed!</string>
+    <string name="toast_upload_measurements_started">Trying to upload measurements&#8230;</string>
+    <string name="toast_upload_successful">Upload successful!</string>
+    <string name="toast_upload_no_values">No values to upload!</string>
+
+</resources>

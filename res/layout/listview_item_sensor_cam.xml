@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/stateImageView"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/imageview_state_content_description"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="6dp"
+            android:paddingTop="4dp" >
+
+            <TextView
+                android:id="@+id/sensorNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:textStyle="bold|italic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp" >
+
+                <TextView
+                    style="@style/listItemTextViewSecondary"
+                    android:layout_width="wrap_content"
+                    android:text="@string/textview_pin_number" />
+
+                <TextView
+                    android:id="@+id/sensorPinNumberTextView"
+                    style="@style/listItemTextViewTertiary" />
+
+                <TextView
+                    style="@style/listItemTextViewSecondary"
+                    android:text="@string/textview_frequency" />
+
+                <TextView
+                    android:id="@+id/sensorFrequencyTextView"
+                    style="@style/listItemTextViewTertiary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/listItemTextViewSecondary"
+                    android:text="@string/textview_sensor_id" />
+
+                <TextView
+                    android:id="@+id/sensorSensorIDTextView"
+                    style="@style/listItemTextViewTertiary" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/removeSensorImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/imageview_remove_sensor_content_description"
+        android:scaleType="fitCenter"
+        android:src="@drawable/content_remove"
+        android:tint="@color/hint_darker_gray" />
+
+</RelativeLayout>

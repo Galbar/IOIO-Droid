@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- General -->
+    <PreferenceCategory android:title="@string/pref_cat_general_title" >
+        <ListPreference
+            android:defaultValue="4"
+            android:entries="@array/decimals"
+            android:entryValues="@array/decimals"
+            android:key="@string/pref_general_decimals_key"
+            android:summary="@string/pref_general_decimals_summ"
+            android:title="@string/pref_general_decimals_title" />
+
+        <com.kaolick.ioio_droid.ui.IodSwitchPreference
+            android:defaultValue="true"
+            android:disableDependentsState="true"
+            android:key="@string/pref_general_simulation_mode_key"
+            android:summaryOff="@string/pref_general_simulation_mode_summ_off"
+            android:summaryOn="@string/pref_general_simulation_mode_summ_on"
+            android:title="@string/pref_general_simulation_mode_title" />
+
+        <ListPreference
+            android:defaultValue="@string/ioio_v1_entry_value"
+            android:dependency="@string/pref_general_simulation_mode_key"
+            android:entries="@array/ioio_versions_entries"
+            android:entryValues="@array/ioio_versions_entry_values"
+            android:key="@string/pref_general_ioio_version_key"
+            android:summary="@string/pref_general_ioio_version_summ"
+            android:title="@string/pref_general_ioio_version_title" />
+
+        <com.kaolick.ioio_droid.ui.IodSwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_general_wakelock_key"
+            android:summaryOff="@string/pref_general_wakelock_summ_off"
+            android:summaryOn="@string/pref_general_wakelock_summ_on"
+            android:title="@string/pref_general_wakelock_title" />
+
+        <Preference
+            android:key="@string/pref_general_about_key"
+            android:summary="@string/pref_general_about_summ"
+            android:title="@string/pref_general_about_title" />
+    </PreferenceCategory>
+    <!-- Database -->
+    <PreferenceCategory android:title="@string/pref_cat_database_title" >
+        <Preference
+            android:key="@string/pref_database_delete_key"
+            android:summary="@string/pref_database_delete_summ"
+            android:title="@string/pref_database_delete_title" />
+        <Preference
+            android:key="@string/pref_database_export_key"
+            android:summary="@string/pref_database_export_summ"
+            android:title="@string/pref_database_export_title" />
+    </PreferenceCategory>
+    <!-- Location -->
+    <PreferenceCategory android:title="@string/pref_cat_location_title" >
+        <com.kaolick.ioio_droid.ui.IodSwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_location_location_service_key"
+            android:summaryOff="@string/pref_location_location_service_summ_off"
+            android:summaryOn="@string/pref_location_location_service_summ_on"
+            android:title="@string/pref_location_location_service_title" />
+
+        <PreferenceScreen
+            android:dependency="@string/pref_location_location_service_key"
+            android:key="@string/pref_location_updates_period_key"
+            android:summary="@string/pref_location_updates_period_summ"
+            android:title="@string/pref_location_updates_period_title" >
+            <EditTextPreference
+                android:dialogMessage="@string/pref_location_updates_frequency_dialog_message"
+                android:digits="0123456789"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="number"
+                android:key="@string/pref_location_updates_frequency_key"
+                android:positiveButtonText="@string/save"
+                android:singleLine="true"
+                android:summary="@string/pref_location_updates_frequency_summ"
+                android:title="@string/pref_location_updates_frequency_title" />
+
+            <ListPreference
+                android:defaultValue="3600000"
+                android:entries="@array/timeUnits"
+                android:entryValues="@array/timeUnitValues"
+                android:key="@string/pref_location_updates_time_unit_key"
+                android:summary="@string/pref_location_updates_time_unit_summ"
+                android:title="@string/pref_location_updates_time_unit_title" />
+        </PreferenceScreen>
+
+        <Preference
+            android:key="@string/pref_location_delete_key"
+            android:summary="@string/pref_location_delete_summ"
+            android:title="@string/pref_location_delete_title" />
+        <Preference
+            android:key="@string/pref_location_export_key"
+            android:summary="@string/pref_location_export_summ"
+            android:title="@string/pref_location_export_title" />
+        <Preference
+            android:key="@string/pref_location_show_last_location_key"
+            android:summary="@string/pref_location_show_last_location_summ"
+            android:title="@string/pref_location_show_last_location_title" />
+    </PreferenceCategory>
+    <!-- Xively -->
+    <PreferenceCategory android:title="@string/pref_cat_xively_title" >
+        <EditTextPreference
+            android:dialogMessage="@string/pref_xively_api_key_dialog_message"
+            android:key="@string/pref_xively_api_key_key"
+            android:positiveButtonText="@string/save"
+            android:summary="@string/pref_xively_api_key_summ"
+            android:title="@string/pref_xively_api_key_title" />
+        <EditTextPreference
+            android:dialogMessage="@string/pref_xively_feed_id_dialog_message"
+            android:digits="0123456789"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="number"
+            android:key="@string/pref_xively_feed_id_key"
+            android:positiveButtonText="@string/save"
+            android:singleLine="true"
+            android:summary="@string/pref_xively_feed_id_summ"
+            android:title="@string/pref_xively_feed_id_title" />
+
+        <com.kaolick.ioio_droid.ui.IodSwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_xively_upload_automatic_key"
+            android:summaryOff="@string/pref_xively_upload_automatic_summ_off"
+            android:summaryOn="@string/pref_xively_upload_automatic_summ_on"
+            android:title="@string/pref_xively_upload_automatic_title" />
+
+        <PreferenceScreen
+            android:dependency="@string/pref_xively_upload_automatic_key"
+            android:key="@string/pref_xively_upload_period_key"
+            android:summary="@string/pref_xively_upload_period_summ"
+            android:title="@string/pref_xively_upload_period_title" >
+            <EditTextPreference
+                android:dialogMessage="@string/pref_xively_upload_frequency_dialog_message"
+                android:digits="0123456789"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="number"
+                android:key="@string/pref_xively_upload_frequency_key"
+                android:positiveButtonText="@string/save"
+                android:singleLine="true"
+                android:summary="@string/pref_xively_upload_frequency_summ"
+                android:title="@string/pref_xively_upload_frequency_title" />
+
+            <ListPreference
+                android:defaultValue="3600000"
+                android:entries="@array/timeUnits"
+                android:entryValues="@array/timeUnitValues"
+                android:key="@string/pref_xively_upload_time_unit_key"
+                android:summary="@string/pref_xively_upload_time_unit_summ"
+                android:title="@string/pref_xively_upload_time_unit_title" />
+        </PreferenceScreen>
+
+        <Preference
+            android:key="@string/pref_xively_upload_measurements_key"
+            android:summary="@string/pref_xively_upload_measurements_summ"
+            android:title="@string/pref_xively_upload_measurements_title" />
+        <Preference
+            android:key="@string/pref_xively_upload_location_key"
+            android:summary="@string/pref_xively_upload_location_summ"
+            android:title="@string/pref_xively_upload_location_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
