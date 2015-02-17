@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="timeUnits">
+        <item>@string/milliseconds</item>
+        <item>@string/seconds</item>
+        <item>@string/minutes</item>
+        <item>@string/hours</item>
+    </string-array>
+    <string-array name="timeUnitValues">
+        <item>1000</item>
+        <item>60000</item>
+        <item>3600000</item>
+    </string-array>
+    <string-array name="inputTypes">
+        <item>@string/analog</item>
+        <item>@string/digital</item>
+    </string-array>
+    <string-array name="measurementTypesAnalog">
+        <item>@string/absolute</item>
+        <item>@string/relative</item>
+    </string-array>
+    <string-array name="measurementTypesDigital">
+        <item>@string/floating</item>
+        <item>@string/pull_down</item>
+        <item>@string/pull_up</item>
+    </string-array>
+    <string-array name="thresholdTypes">
+        <item>@string/lower</item>
+        <item>@string/upper</item>
+    </string-array>
+    <string-array name="ioio_versions_entries">
+        <item>@string/ioio_v1_entry</item>
+        <item>@string/ioio_otg_entry</item>
+    </string-array>
+    <string-array name="ioio_versions_entry_values">
+        <item>@string/ioio_v1_entry_value</item>
+        <item>@string/ioio_otg_entry_value</item>
+    </string-array>
+    <string-array name="decimals">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+</resources>

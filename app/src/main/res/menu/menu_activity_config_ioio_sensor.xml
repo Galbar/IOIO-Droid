@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_config_sensor_activity_save_sensor"
+        android:icon="@drawable/content_save"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/menu_save_sensor"/>
+    <item
+        android:id="@+id/menu_config_sensor_activity_reset_ui"
+        android:icon="@drawable/navigation_refresh"
+        android:orderInCategory="200"
+        android:showAsAction="always"
+        android:title="@string/menu_reset_ui"/>
+    <item
+        android:id="@+id/menu_config_sensor_activity_help"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:title="@string/menu_help"/>
+
+</menu>

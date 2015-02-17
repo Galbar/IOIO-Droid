@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/helpHeaderTextView"
+            android:text="@string/help_analog_input_title" />
+
+        <TextView
+            style="@style/helpContentTextView"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:text="@string/help_analog_input_content" />
+
+        <TextView
+            style="@style/helpHeaderTextView"
+            android:text="@string/help_digital_input_title" />
+
+        <TextView
+            style="@style/helpContentTextView"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:text="@string/help_digital_input_content" />
+
+        <TextView
+            style="@style/helpHeaderTextView"
+            android:text="@string/help_threshold_title" />
+
+        <TextView
+            style="@style/helpContentTextView"
+            android:text="@string/help_threshold_content" />
+
+        <TextView
+            style="@style/helpHeaderTextView"
+            android:text="@string/help_xively_title" />
+
+        <TextView
+            style="@style/helpContentTextView"
+            android:text="@string/help_xively_content" />
+    </LinearLayout>
+
+</ScrollView>
